@@ -76,7 +76,7 @@ while True:
     s1.F= F1_2 + F1_3
     s2.F= F2_3 + -F1_2
     s3.F= -F1_3 + -F2_3
-#popęd xd
+#popęd
     s1.p += s1.F * dt
     s2.p += s2.F * dt
     s3.p += s3.F * dt
