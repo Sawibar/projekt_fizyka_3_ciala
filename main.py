@@ -39,16 +39,27 @@ m3=Ms
 
 
 
+#*****całkiem fajne*****
+s1= sphere(pos = vector(-80*Rs,0,0), radius= r1, color = color.blue, make_trail = True)
+s2= sphere(pos = vector(80*Rs,0,0), radius= r2, color = color.yellow, make_trail = True)
+s3= sphere(pos = vector(0,-(sqrt(3)*80*Rs),0), radius= r3, color = color.green, make_trail = True)
 
-s1= sphere(pos = vector(-40*Rs,0,0), radius= r1, color = color.blue, make_trail = True)
-s2= sphere(pos = vector(40*Rs,0,0), radius= r2, color = color.yellow, make_trail = True)
-s3= sphere(pos = vector(0,-(sqrt(3)*40*Rs),0), radius= r3, color = color.green, make_trail = True)
 
-
-
-s1.p=vector(Ms*3e4,0,0)
+s1.p=vector(0,Ms*3e4,0)
 s2.p=vector(0,Ms*3e3,-Ms*3e3)
 s3.p=vector(0,Ms*3e3,0)
+#******************
+
+#********************
+# s1= sphere(pos = vector(-80*Rs,0,0), radius= r1, color = color.blue, make_trail = True)
+# s2= sphere(pos = vector(80*Rs,0,0), radius= r2, color = color.yellow, make_trail = True)
+# s3= sphere(pos = vector(0,80*Rs,0), radius= r3, color = color.green, make_trail = True)
+#
+# s1.p=vector(0,-Ms*3e4,0)
+# s2.p=vector(0,Ms*3e4,0)
+# s3.p=vector(0,0,Ms*3e4)
+#********************
+
 
 t=0
 dt=1000
