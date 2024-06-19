@@ -22,6 +22,9 @@ m2=Ms
 r3=Rs*3
 m3=Ms
 
+
+
+# #****************** Próba czegoś stabilnego xdddddd ***********************
 # s1= sphere(pos = vector(-80*Rs,0,0), radius= r1, color = color.blue, make_trail = True)
 # s2= sphere(pos = vector(80*Rs,0,0), radius= r2, color = color.yellow, make_trail = True)
 # s3= sphere(pos = vector(0,0,0), radius= r3, color = color.green, make_trail = True)
@@ -29,9 +32,12 @@ m3=Ms
 # s1.p=vector(0,Ms*3e4,0)
 # s2.p=vector(0,-Ms*3e4,0)
 # s3.p=vector(0,0,Ms*50)
-
+#
 # m3=Ms/1000
 # #rate(1500)
+
+
+
 
 
 s1= sphere(pos = vector(-40*Rs,0,0), radius= r1, color = color.blue, make_trail = True)
@@ -40,14 +46,14 @@ s3= sphere(pos = vector(0,-(sqrt(3)*40*Rs),0), radius= r3, color = color.green, 
 
 
 
-s1.p=vector(0,0,0)
-s2.p=vector(0,0,0)
-s3.p=vector(0,0,0)
+s1.p=vector(Ms*3e4,0,0)
+s2.p=vector(0,Ms*3e3,-Ms*3e3)
+s3.p=vector(0,Ms*3e3,0)
 
 t=0
 dt=1000
 while True:
-    rate(1500)
+    rate(300)
 #odległośc, siła grawitacji
     r1_2=s2.pos-s1.pos
     F1_2=G*m1*m2*norm(r1_2)/(mag(r1_2)**2)
